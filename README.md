@@ -4,9 +4,12 @@ A clean and readable Pytorch implementation of CycleGAN (https://arxiv.org/abs/1
 ## Assign
 
 1.  20% (Training cycleGAN)
+https://drive.google.com/open?id=1y5epDXbWNCM9Ya1Mh_4KPRXafoVyAW-R
 2.  10% (Inference cycleGAN in personal image)
+![test image1](./images/test1.png)
+![test image2](./images/test2.png)
 3.  20% (Compare with other method)
-4.  30% (Assistant) 
+4.  30% (Assistant)
 5.  20% (Mutual evaluation)
 
 reference:
@@ -41,15 +44,15 @@ Alternatively you can build your own dataset by setting up the following directo
     ├── datasets                   
     |   ├── <dataset_name>         # i.e. apple2orange
     |   |   ├── trainA             # Contains domain A images (i.e. apple)
-    |   |   ├── trainB             # Contains domain B images (i.e. orange) 
+    |   |   ├── trainB             # Contains domain B images (i.e. orange)
     |   |   ├── testA              # Testing
     |   |   └── testB              # Testing
-    
+
 ### 2. Train
 ```
 python train.py --dataroot datasets/<dataset_name>/ --cuda
 ```
-This command will start a training session using the images under the *dataroot/train* directory with the hyperparameters that showed best results according to CycleGAN authors. 
+This command will start a training session using the images under the *dataroot/train* directory with the hyperparameters that showed best results according to CycleGAN authors.
 
 Both generators and discriminators weights will be saved ```./output/<dataset_name>/``` the output directory.
 
@@ -58,12 +61,12 @@ If you don't own a GPU remove the --cuda option, although I advise you to get on
 
 
 ## Testing
-The pre-trained file is on [Google drive](https://drive.google.com/open?id=17FREtttCyFpvjRJxd4v3VVlVAu__Y5do). Download the file and save it on  ```./output/<dataset_name>/netG_A2B.pth``` and ```./output/<dataset_name>/netG_B2A.pth```. 
- 
+The pre-trained file is on [Google drive](https://drive.google.com/open?id=17FREtttCyFpvjRJxd4v3VVlVAu__Y5do). Download the file and save it on  ```./output/<dataset_name>/netG_A2B.pth``` and ```./output/<dataset_name>/netG_B2A.pth```.
+
 ```
 python test.py --dataroot datasets/<dataset_name>/ --cuda
 ```
-This command will take the images under the ```dataroot/testA/``` and ```dataroot/testB/``` directory, run them through the generators and save the output under the ```./output/<dataset_name>/``` directories. 
+This command will take the images under the ```dataroot/testA/``` and ```dataroot/testB/``` directory, run them through the generators and save the output under the ```./output/<dataset_name>/``` directories.
 
 Examples of the generated outputs (default params) apple2orange, summer2winter_yosemite, horse2zebra dataset:
 
