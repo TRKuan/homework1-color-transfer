@@ -4,14 +4,16 @@ A clean and readable Pytorch implementation of CycleGAN (https://arxiv.org/abs/1
 ## Assign
 
 1.  20% (Training cycleGAN)  
-Due to the GPU memory limit, we only train with images of size 64x64  
+apple2orange
 .pth file:  
-https://drive.google.com/open?id=1y5epDXbWNCM9Ya1Mh_4KPRXafoVyAW-R
+https://drive.google.com/open?id=1tWkLkqdDhNvoUGR39Q6huuqW2OERd4m7
 2.  10% (Inference cycleGAN in personal image)  
-horse to zebra  
-![test image1](./images/test1.png)  
-zebra to horse  
-![test image2](./images/test2.png)
+apple -> orange  
+![](./images/a0001.png)
+![](./images/a0002.png)  
+orange -> apple  
+![](./images/b0001.png)
+![](./images/b0002.png)  
 3.  20% (Compare with other method)
 4.  30% (Assistant)
 5.  20% (Mutual evaluation)
