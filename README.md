@@ -8,11 +8,17 @@ apple2orange
 .pth file:  
 https://drive.google.com/open?id=1tWkLkqdDhNvoUGR39Q6huuqW2OERd4m7
 2.  10% (Inference cycleGAN in personal image)  
-apple <- orange  
+apple to orange  
 ![](./images/a.png)  
-orange <- apple  
+orange to apple  
 ![](./images/b.png)  
-3.  20% (Compare with other method)
+3.  20% (Compare with other method)  
+Here we compare CycleGAN with [Image Analogies by Hertzmann et al](https://www.mrl.nyu.edu/publications/image-analogies/analogies-fullres.pdf) discussed in the lecture. We only focuse on the application of orange to apple texture transfer. The code we used for this comparison is from the [website](https://www.mrl.nyu.edu/projects/image-analogies/lf/) they provided.  
+Below is the result using Image Analogies. The two on the top are the paired images A, A'. Bottom left is the input image and bottom right is the output.  
+![](./images/summary.png)  
+Compare with the result from CycleGAN  
+![](./images/b.png)  
+We can see that CycleGAN is better on preserving the structure of the image while Image Analogies only captures the general style.
 4.  30% (Assistant)
 5.  20% (Mutual evaluation)
 
