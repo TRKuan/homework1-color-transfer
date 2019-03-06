@@ -8,9 +8,9 @@ apple2orange
 .pth file:  
 https://drive.google.com/open?id=1tWkLkqdDhNvoUGR39Q6huuqW2OERd4m7
 2.  10% (Inference cycleGAN in personal image)  
-apple -> orange  
+apple <- orange  
 ![](./images/a.png)  
-orange -> apple  
+orange <- apple  
 ![](./images/b.png)  
 3.  20% (Compare with other method)
 4.  30% (Assistant)
