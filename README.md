@@ -24,7 +24,7 @@ Below is the result using Image Analogies. The two on the left are the paired im
 ![](./images/summary.png)  
 Compare with the result from CycleGAN  
 ![](./images/b.png)  
-We can see that CycleGAN is better on preserving the structure of the image while Image Analogies only captures the general style.Thus,if we 
+We can see that CycleGAN is better on preserving the structure of the image while Image Analogies only captures the general style.Thus,if we look closely to the Image analogies one we can see that the output image does not match what real apples should look like,the structure of them collapse,there is no well-structured apple in the output image.As we go to the CycleGAN ouput image,it is a well-structured apple and the texture of them are closer to the real one.
 
 As for the resources needed to generate the image. CycleGAN needs lots of training data and training time. Powerful GPUs are also needed to accelerate the training process. On the other hand, Image Analogies only needs 2 carefully picked images as example images and the time is mainly spent on inference not training.
 
